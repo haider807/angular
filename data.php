@@ -22,5 +22,5 @@ $resu = array("records"=>$res);
         echo json_encode($resu);
 ///echo $resu;
 //close the connection
-//mysql_close($dbhandle);
+mysql_close($dbhandle);
 ?>
