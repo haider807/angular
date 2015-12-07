@@ -1,10 +1,13 @@
 angular.module("finance",[]).factory('currencyConverter',function(){
-    var currencies = ['PAKRs','USDollor','Euro','CNY'];
+    var currencies = ['PAKRs','USDollor','Euro','CNY','GBPound','SaudiRial','UAEDirham'];
     var usdToForeignRates   = {
         USDollor: 1,
         PAKRs: 109,
         Euro: 0.74,
-        CNY: 6.09
+        CNY: 6.09,
+        GBPound: 0.66,
+        SaudiRial: 3.75,
+        UAEDirham:3.66
     };
     var convert = function(amount,inCur,outCur)
     {

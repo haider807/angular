@@ -26,10 +26,10 @@
             </tr>
             
         </table>
-        Total:<span ng-repeat="c in invoice.currencies">{{invoice.total(c) | currency:c}}
-                
-                
-            </span>
+        Total:
+        <ul>
+            <li ng-repeat="c in invoice.currencies">{{invoice.total(c) | currency:c}}</li>
+        </ul>
     </div>
     <script src="currency.js"></script>
 </body>
