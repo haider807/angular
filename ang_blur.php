@@ -6,10 +6,16 @@
     <h1>Angular Sample  <span style="color: red;">Blur</span></h1>
     <div ng-app="blur_event" ng-controller="ExampleController">
         <form>
-          Name:
-          <input type="text" ng-model="user.name" ng-model-options="{ updateOn: 'blur' }" /><br />
-          Other data:
-          <input type="text" ng-model="user.data" /><br />
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" ng-model="user.name" ng-model-options="{ updateOn: 'blur' }" /></ta>
+                </tr>
+                <tr>
+                    <td>Other data:</td>
+                    <td><input type="text" ng-model="user.data" /><br /></td>
+                </tr>
+            </table>
         </form>
         <pre>username = "{{user.name}}"</pre>
         <pre>userdata = "{{user.data}}"</pre>
