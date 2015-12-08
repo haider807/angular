@@ -28,7 +28,7 @@
         </div>
         
         <!-- LAST NAME -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.last_name.$pristine }">
+        <div class="form-group" ng-class="{ 'has-error' : userForm.last_name.$invalid && !userForm.last_name.$pristine }">
             <label>Last Name</label>
             <input type="text" name="last_name" class="form-control" ng-model="user.last_name" ng-minlength="3" required>
             <p ng-show="userForm.last_name.$invalid && !userForm.last_name.$pristine" class="help-block">Your Last name is required.</p>
@@ -48,6 +48,21 @@
             <label>Email</label>
             <input type="email" name="email" class="form-control" ng-model="user.email">
             <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+        
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" checked name="gender" value="male" required>
+                  Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="female" required>
+                  Female
+                </label>
+            </div>
         </div>
         
         <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
