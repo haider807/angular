@@ -76,12 +76,9 @@
 </div>
 </div>
         <script>
-            // create angular app
 	var validationApp = angular.module('signup', []);
 
-	// create angular controller
 	validationApp.controller('signupController', function($scope,$http) {
-
 		
                 // function to submit the form after all validation has occurred
                 $scope.submitForm = function() {
@@ -96,9 +93,7 @@
                })
                 .success(function(data) 
                 {
-                    //console.log(data);
                     $scope.info = data;
-                    //alert("Value => "+$scope.info);
                     /////////////////////////////////////////////////////
                     // check to make sure the form is completely valid
                     if($scope.userForm.$valid && $scope.info === '0') {
@@ -111,13 +106,10 @@
                 ).error(function(response,status)
                 {
                     console.log('ERROR HERE'+ status);
-                });
-               
-
-		};
+                });               
+        };
                 
-
-	});
+});
         </script>
 </body>
 </html>
