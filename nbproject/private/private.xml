@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Project/xampp/htdocs/angular/signup/signup.php</file>
+            <file>file:/D:/Project/xampp/htdocs/angular/data.php</file>
+            <file>file:/D:/Project/xampp/htdocs/angular/signup/emailcheck.php</file>
             <file>file:/D:/Project/xampp/htdocs/angular/drag/drag.php</file>
+            <file>file:/D:/Project/xampp/htdocs/angular/signup/signup1.php</file>
             <file>file:/D:/Project/xampp/htdocs/angular/drag/drag.js</file>
             <file>file:/D:/Project/xampp/htdocs/angular/ang_validation.php</file>
+            <file>file:/D:/Project/xampp/htdocs/angular/ang_http.php</file>
         </group>
     </open-files>
 </project-private>

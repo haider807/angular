@@ -15,11 +15,10 @@ $selected = mysql_select_db("test",$dbhandle)
 //*** The request is a JSON request.
 //*** We must read the input.
 //*** $_POST or $_GET will not work!
-
 $data = file_get_contents("php://input");
 $objData = json_decode($data);
-
 $email = $objData->email;
+
 //$email = "usman.haider@discretelogix.com";
 $res = 0;
 //execute the SQL query and return records
