@@ -48,7 +48,8 @@
             <label>Email{{userForm.duplicate}}</label>
             <input type="email" id="email" name="email" class="form-control" ng-model="user.email" duplicate="true" ng-change="verifyDuplicate()">
             <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
-            <p ng-show="duplicate && userForm.email.$error.verifyDuplicate" class="help-block">Duplicate.</p>
+            <p ng-show="duplicate" class="help-block">Email already register (Duplicate).</p>
+            <p ng-show="available" class="help-block">Email is available.</p>
         </div>
 <!--        duplicate-->
         
@@ -114,14 +115,18 @@
                             console.log('our form is amazing' + $scope.info);
                             $scope.duplicate = true;
                             $scope.duplicate = !$scope.duplicate;
-                            return false;
+                            $scope.available = false;
+                            $scope.available = !$scope.available;
+                            return true;
                     }
                     else{
                         console.log('Already exist this email');
                         $scope.duplicate = false;
                         $scope.duplicate = !$scope.duplicate;
+                        $scope.available = true;
+                        $scope.available = !$scope.available;
                         console.log("SCOPE =>"+$scope.duplicate);
-                        return true;
+                        return false;
                         //return 0;
                     }
                 }

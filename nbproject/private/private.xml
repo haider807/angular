@@ -5,10 +5,9 @@
         <group>
             <file>file:/D:/Project/xampp/htdocs/angular/data.php</file>
             <file>file:/D:/Project/xampp/htdocs/angular/signup/emailcheck.php</file>
-            <file>file:/D:/Project/xampp/htdocs/angular/drag/drag.php</file>
+            <file>file:/D:/Project/xampp/htdocs/angular/signup/signup2.php</file>
             <file>file:/D:/Project/xampp/htdocs/angular/signup/signup1.php</file>
-            <file>file:/D:/Project/xampp/htdocs/angular/drag/drag.js</file>
-            <file>file:/D:/Project/xampp/htdocs/angular/ang_validation.php</file>
+            <file>file:/D:/Project/xampp/htdocs/angular/ang_dom2.php</file>
             <file>file:/D:/Project/xampp/htdocs/angular/ang_http.php</file>
         </group>
     </open-files>
